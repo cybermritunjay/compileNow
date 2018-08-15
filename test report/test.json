@@ -1,0 +1,29 @@
+{
+  "config": {
+    "phases": [
+      {
+        "arrivalRate": 10,
+        "duration": 30
+      }
+    ],
+    "target": "http://localhost:5000"
+  },
+  "scenarios": [
+    {
+      "flow": [
+        {
+          "post": {
+            "json": {
+              "code": "print \"Hello\"",
+              "input": "[\"\"]",
+              "language": "0",
+              "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyODksIm5hbWUiOiJtcml0dW5qYXkiLCJlbWFpbCI6ImN5YmVybXJpdHVuamF5QGdtYWlsLmNvbSJ9LCJpYXQiOjE1Mjg2Njc4NDZ9.R2V3yqz0Qbbun52AKCw-rrcXjEzt1a-GOee-8_T-nNM"
+            },
+            "url": "/api/compile"
+          }
+        }
+      ],
+      "name": "Register a user"
+    }
+  ]
+}
